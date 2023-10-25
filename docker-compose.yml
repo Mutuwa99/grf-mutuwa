@@ -1,12 +1,12 @@
 version: '3'
 
 services:
-  prometheus-us-east-1:
+  prometheus-af-south-1:
     image: prom/prometheus
     ports:
       - "9090:9090"
     volumes:
-      - ./prometheus/prometheus-us-east-1.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus/prometheus-af-south-1.yml:/etc/prometheus/prometheus.yml
     environment:
       - AWS_ACCESS_KEY_ID=<AKIAZQLUA363YGZ6K3O6>
       - AWS_SECRET_ACCESS_KEY=<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>
