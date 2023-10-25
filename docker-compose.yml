@@ -8,8 +8,8 @@ services:
     volumes:
       - ./prometheus/prometheus-af-south-1.yml:/etc/prometheus/prometheus.yml
     environment:
-      - AWS_ACCESS_KEY_ID=AKIAZQLUA363YGZ6K3O6
-      - AWS_SECRET_ACCESS_KEY=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
+      - AWS_ACCESS_KEY_ID=AKIAZQLUA3633QNEYGH2
+      - AWS_SECRET_ACCESS_KEY=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
       - AWS_REGION=af-south-1
 
   prometheus-us-west-1:
@@ -19,8 +19,8 @@ services:
     volumes:
       - ./prometheus/prometheus-eu-west-1.yml:/etc/prometheus/prometheus.yml
     environment:
-      - AWS_ACCESS_KEY_ID=AKIAZQLUA363YGZ6K3O6
-      - AWS_SECRET_ACCESS_KEY=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
+      - AWS_ACCESS_KEY_ID=AKIAZQLUA3633QNEYGH2
+      - AWS_SECRET_ACCESS_KEY=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
       - AWS_REGION=eu-west-1
 
   prometheus-eu-west-3:
@@ -30,8 +30,8 @@ services:
     volumes:
       - ./prometheus/prometheus-eu-west-3.yml:/etc/prometheus/prometheus.yml
     environment:
-      - AWS_ACCESS_KEY_ID=<AKIAZQLUA363YGZ6K3O6>
-      - AWS_SECRET_ACCESS_KEY=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
+      - AWS_ACCESS_KEY_ID=AKIAZQLUA3633QNEYGH2
+      - AWS_SECRET_ACCESS_KEY=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
       - AWS_REGION=eu-west-3
 
   grafana:
