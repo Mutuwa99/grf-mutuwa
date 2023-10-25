@@ -17,7 +17,7 @@ services:
     ports:
       - "9091:9090"
     volumes:
-      - ./prometheus/prometheus-us-west-1.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus/prometheus-eu-west-1.yml:/etc/prometheus/prometheus.yml
     environment:
       - AWS_ACCESS_KEY_ID=<AKIAZQLUA363YGZ6K3O6>
       - AWS_SECRET_ACCESS_KEY=<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>
