@@ -12,7 +12,7 @@ services:
     #   - AWS_SECRET_ACCESS_KEY=bcJXOsqdF3A7bnod2RNQ5x7vRCpJ9TdSMns7e17O
     #   - AWS_REGION=af-south-1
 
-  prometheus-us-west-1:
+  prometheus-eu-west-1:
     image: prom/prometheus
     ports:
       - "9091:9090"
