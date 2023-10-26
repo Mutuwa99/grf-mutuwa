@@ -2,7 +2,7 @@ global:
   scrape_interval: 15s
 
 scrape_configs:
-  - job_name: 'ec2-instances'
+  - job_name: '4-sure Capetown servers'
     ec2_sd_configs:
       - region: 'af-south-1'
     static_configs:
