@@ -36,7 +36,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./nginx/mynginx.conf:/etc/nginx/conf.d/mynginx.conf
+      - ./nginx/mynginx.conf:/etc/nginx/mynginx.conf
     
 
 
