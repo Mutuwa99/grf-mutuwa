@@ -29,13 +29,13 @@ services:
       - "3000:3000"
     volumes:
       - ./grafana/provisioning:/etc/grafana/provisioning
-      
+
   nginx:
     image: nginx:1.17.10
     ports:
       - "80:80"
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/mynginx.conf:/etc/nginx/mynginx.conf
     
 
 
