@@ -7,6 +7,7 @@ services:
       - "9090:9090"
     volumes:
       - ./prometheus/prometheus-af-south-1.yml:/etc/prometheus/prometheus.yml
+    
 
   prometheus-eu-west-1:
     image: prom/prometheus
@@ -28,3 +29,12 @@ services:
       - "3000:3000"
     volumes:
       - ./grafana/provisioning:/etc/grafana/provisioning
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    
+
+
