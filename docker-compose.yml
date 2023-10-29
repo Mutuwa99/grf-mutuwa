@@ -29,12 +29,12 @@ services:
       - "3000:3000"
     volumes:
       - ./grafana/provisioning:/etc/grafana/provisioning
-nginx:
-  image: nginx
-  ports:
-    - "80:80"
-  volumes:
-    - ./nginx/my-site.conf:/etc/nginx/conf.d/my-site.conf
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/my-site.conf:/etc/nginx/conf.d/my-site.conf
 
     
 
