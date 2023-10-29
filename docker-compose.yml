@@ -25,6 +25,7 @@ services:
 
   grafana:
     image: grafana/grafana
+    container_name: my_grafana_container
     ports:
       - "3000:3000"
     volumes:
