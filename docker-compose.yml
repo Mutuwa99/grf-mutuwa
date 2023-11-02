@@ -32,12 +32,12 @@ services:
       - ./grafana/provisioning:/etc/grafana/provisioning
       - ./grafana/grafana.ini:/etc/grafana/grafana.ini
 
-  nginx:
-    image: nginx:1.17.10
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx/mynginx.conf:/etc/nginx/mynginx.conf
+  # nginx:
+  #   image: nginx:1.17.10
+  #   ports:
+  #     - "80:80"
+  #   volumes:
+  #     - ./nginx/mynginx.conf:/etc/nginx/mynginx.conf
     
 
 
