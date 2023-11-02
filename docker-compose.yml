@@ -30,7 +30,7 @@ services:
       - "3000:3000"
     volumes:
       - ./grafana/provisioning:/etc/grafana/provisioning
-      - ./grafana/grafana.ini:/etc/grafana/grafana.ini
+      # - ./grafana/grafana.ini:/etc/grafana/grafana.ini
 
   # nginx:
   #   image: nginx:1.17.10
