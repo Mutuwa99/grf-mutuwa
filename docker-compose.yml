@@ -25,18 +25,19 @@ services:
 
   grafana:
     image: grafana/grafana
-    container_name: my_grafana_container
+    
     ports:
       - "3000:3000"
     volumes:
       - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/grafana.ini:/etc/grafana/grafana.ini
 
   nginx:
     image: nginx:1.17.10
     ports:
       - "80:80"
     volumes:
-      - ./nginx/mynginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/mynginx.conf:/etc/nginx/mynginx.conf
     
 
 
