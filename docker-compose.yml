@@ -25,7 +25,8 @@ services:
 
   grafana:
     image: grafana/grafana
-    
+    environment:
+      - GF_SERVER_ROOT_URL=http://grafana.noble-mutuwa.com
     ports:
       - "3000:3000"
     volumes:
